@@ -36,5 +36,16 @@ function columColorChanger() {
     }
   })
 }
+//gets text from local storage if they were saved
+$("#h1 .description").val(localStorage.getItem("h1"));
+$("#h2 .description").val(localStorage.getItem("h2"));
+$("#h3 .description").val(localStorage.getItem("h3"));
+$("#h4 .description").val(localStorage.getItem("h4"));
+$("#h5 .description").val(localStorage.getItem("h5"));
+$("#h6 .description").val(localStorage.getItem("h6"));
+$("#h7 .description").val(localStorage.getItem("h7"));
+$("#h8 .description").val(localStorage.getItem("h8"));
+$("#h9 .description").val(localStorage.getItem("h9"));
+
 columColorChanger();
 })
