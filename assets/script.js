@@ -19,22 +19,19 @@ function columColorChanger() {
   var currentTime = moment().hour();
 //loops over all my time blocks
   $(".time-block").each(function () {
-    var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
+    var timeBlock = parseInt($(this).attr("id"));
 
     if (timeBlock < currentTime) {
-      $(this).removeClass("future");
-      $(this).removeClass("present");
       $(this).addClass("past");
     } else if (timeBlock === currentTime) {
-      $(this).removeClass("past");
-      $(this).removeClass("future");
       $(this).addClass("present");
-    } else {
-      $(this).removeClass("present");
       $(this).removeClass("past");
+    } else {
       $(this).addClass("future");
+      $(this).removeClass("past");
+      $(this).removeClass("present");
     }
-  })
+  });
 }
 //gets text from local storage if they were saved
 $("#h1 .description").val(localStorage.getItem("h1"));
@@ -48,4 +45,4 @@ $("#h8 .description").val(localStorage.getItem("h8"));
 $("#h9 .description").val(localStorage.getItem("h9"));
 
 columColorChanger();
-})
+});

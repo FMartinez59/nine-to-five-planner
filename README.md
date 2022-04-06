@@ -3,7 +3,9 @@
 ## This is a 9 - 5 full time planner. 
 
 # Heres how it works
-![Demo of Planner.](link)
+![Demo of Planner.](./assets/images/Work%20Day%20Scheduler.gif)
+![Picture of Planner.](./assets/images/Screenshot%20(19).png)
+
 
 ## POINTS OF INTEREST
 - GIVEN I am using a daily planner to create a schedule
